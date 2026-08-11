@@ -1,0 +1,166 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}About Us | KleenChamps Africa{% endblock %}
+
+{% block content %}
+
+<section class="page-hero about-hero">
+    <div class="container page-hero-content">
+        <div class="scroll-indicator">
+    <i class="fa-solid fa-angles-down"></i>
+</div>
+        <p class="section-eyebrow">ABOUT US</p>
+        <h1>Building Restoration Masters</h1>
+        <p>We restore, preserve and protect buildings through innovative restoration solutions, quality workmanship and exceptional customer service.</p>
+    </div>
+</section>
+<section class="container service-detail reveal">
+    <div class="service-image">
+        <img src="{% static 'images/about-company.jpg' %}" alt="KleenChamps Africa Team">
+
+        <div class="image-badge">
+            <i class="fa-solid fa-circle-check"></i>
+            Trusted Building Restoration Experts
+        </div>
+    </div>
+
+    <div class="service-content">
+        <p class="section-eyebrow">WHO WE ARE</p>
+        <h2>Committed to Excellence</h2>
+
+        <p>
+            KleenChamps Africa is a professional building restoration company
+            specializing in façade restoration, waterproofing, concrete repair,
+            floor polishing, roof cleaning and long-term building maintenance.
+        </p>
+
+        <p>
+            Our experienced team combines modern equipment, premium materials
+            and industry best practices to deliver durable restoration
+            solutions for residential, commercial and industrial properties.
+        </p>
+
+        <a href="{% url 'contact' %}" class="btn-primary">
+            Work With Us
+        </a>
+    </div>
+</section>
+<section class="reveal">
+<div class="container">
+
+<p class="section-eyebrow">MISSION • VISION • VALUES</p>
+
+<div class="why-grid">
+
+<div class="why-card">
+<h3>Our Mission</h3>
+<p>
+Deliver high-quality restoration services that extend the life,
+beauty and value of every property entrusted to us.
+</p>
+</div>
+
+<div class="why-card">
+<h3>Our Vision</h3>
+<p>
+To become Africa's leading building restoration company known
+for quality, innovation and integrity.
+</p>
+</div>
+
+<div class="why-card">
+<h3>Our Values</h3>
+
+<ul>
+<li>Integrity</li>
+<li>Professionalism</li>
+<li>Innovation</li>
+<li>Quality</li>
+<li>Safety</li>
+<li>Customer Satisfaction</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="reveal">
+
+<div class="container">
+
+<p class="section-eyebrow">WHY CHOOSE US</p>
+
+<h2 class="section-title">
+What Sets Us Apart
+</h2>
+
+<div class="services-grid">
+<div class="service-card">
+    <i class="fa-solid fa-user-tie service-icon"></i>
+    <h3>Experienced Professionals</h3>
+    <p>Highly trained specialists with practical restoration expertise.</p>
+</div>
+
+<div class="service-card">
+    <i class="fa-solid fa-award service-icon"></i>
+    <h3>Quality Materials</h3>
+    <p>We use premium products that deliver lasting protection.</p>
+</div>
+
+<div class="service-card">
+    <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+    <h3>Modern Equipment</h3>
+    <p>Advanced restoration technology ensures efficient project delivery.</p>
+</div>
+
+<div class="service-card">
+    <i class="fa-solid fa-shield-halved service-icon"></i>
+    <h3>Safety First</h3>
+    <p>Every project follows strict health and safety procedures.</p>
+</div>
+
+<div class="service-card">
+    <i class="fa-solid fa-clock service-icon"></i>
+    <h3>Reliable Service</h3>
+    <p>Projects completed on time while maintaining exceptional quality.</p>
+</div>
+
+<div class="service-card">
+    <i class="fa-solid fa-handshake service-icon"></i>
+    <h3>Customer Focus</h3>
+    <p>Solutions tailored to every client's unique requirements.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta-section reveal" >
+
+<div class="container cta-content">
+
+<h2>
+Ready to Restore Your Property?
+</h2>
+
+<p>
+Partner with KleenChamps Africa for professional restoration,
+maintenance and protection services.
+</p>
+
+<a href="{% url 'contact' %}" class="btn-primary">
+
+Request a Free Quote
+
+</a>
+
+</div>
+
+</section>
+
+{% endblock %}

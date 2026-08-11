@@ -1,0 +1,351 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}
+Home | KleenChamps Africa
+{% endblock %}
+
+{% block content %}
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="hero-eyebrow">
+            Building Restoration Masters · Nairobi, Kenya
+        </p>
+
+        <h1>
+            We Restore
+            <br>
+            <em>Surfaces.</em>
+            <br>
+            We Protect
+            <br>
+            Investments.
+        </h1>
+
+        <p>
+            Expert surface restoration and protective treatment solutions
+            for commercial and residential properties across Africa.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="{% url 'projects' %}" class="btn-primary">
+                View Our Projects
+            </a>
+
+            <a href="{% url 'contact' %}" class="btn-outline">
+                Request a Quote
+            </a>
+
+        </div>
+
+        <div class="scroll-indicator">
+    <i class="fa-solid fa-angles-down"></i>
+
+</div>
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+
+<section class="stats-band reveal">
+
+    <div class="stat-item">
+        <div class="stat-number" data-target="20">0</div>
+        <div class="stat-label">Years Experience</div>
+    </div>
+
+    <div class="stat-item">
+        <div class="stat-number" data-target="500">0</div>
+        <div class="stat-label">Projects Completed</div>
+    </div>
+
+    <div class="stat-item">
+        <div class="stat-number" data-target="100">0</div>
+        <div class="stat-label">Quality Assured (%)</div>
+    </div>
+
+    <div class="stat-item">
+        <div class="stat-number" data-target="8">0</div>
+        <div class="stat-label">Industries Served</div>
+    </div>
+
+</section>
+
+<!-- FEATURED SERVICES -->
+
+<section class="reveal">
+
+
+    <p class="section-eyebrow">
+        Featured Services
+    </p>
+
+    <h2 class="section-title">
+        Restoring Value.
+        <br>
+        Protecting Investments.
+    </h2>
+
+    <p class="section-sub">
+
+        We provide specialized restoration solutions for residential,
+        commercial and industrial properties.
+
+    </p>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+
+            <div class="service-icon">🏢</div>
+
+            <h3>Building Restoration</h3>
+
+            <p>
+                Exterior façade restoration and structural repair.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">✨</div>
+
+            <h3>Floor Care</h3>
+
+            <p>
+                Marble, terrazzo, granite and stone polishing.
+            </p>
+
+        </div>
+
+        <div class="service-card">
+
+            <div class="service-icon">🛡️</div>
+
+            <h3>Waterproofing</h3>
+
+            <p>
+                Long-lasting protective coating solutions.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:50px;">
+
+        <a href="{% url 'services' %}" class="btn-primary">
+
+            View All Services
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURED PROJECTS -->
+
+<section class="reveal">
+
+    <p class="section-eyebrow">
+        Featured Projects
+    </p>
+
+    <h2 class="section-title">
+
+        Real Projects.
+        <br>
+        Real Results.
+
+    </h2>
+
+    <div class="ba-grid">
+
+        <div class="ba-card">
+
+            <img src="{% static 'images/project_page-22.jpg' %}" alt="Project">
+
+            <div class="ba-info">
+
+                <h4>Building Exterior Restoration</h4>
+
+                <p>Nairobi CBD</p>
+
+            </div>
+
+        </div>
+
+        <div class="ba-card">
+
+            <img src="{% static 'images/project_page-23.jpg' %}" alt="Project">
+
+            <div class="ba-info">
+
+                <h4>Roof Cleaning</h4>
+
+                <p>Karen Residential Estate</p>
+
+            </div>
+
+        </div>
+
+        <div class="ba-card">
+
+            <img src="{% static 'images/project_page-24.jpg' %}" alt="Project">
+
+            <div class="ba-info">
+
+                <h4>Marble Restoration</h4>
+
+                <p>Commercial Office Building</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:50px;">
+
+        <a href="{% url 'projects' %}" class="btn-primary">
+
+            View Portfolio
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section class="testimonials reveal">
+    <div class="container">
+
+        <div class="testimonial active">
+            <p>"KleenChamps restored our commercial building beyond expectations."</p>
+            <h4>— Property Manager, Nairobi</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>"Professional team, timely delivery and excellent workmanship."</p>
+            <h4>— School Administrator</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>"Their waterproofing solution permanently solved our leakage issues."</p>
+            <h4>— Church Committee</h4>
+        </div>
+
+    </div>
+</section>
+<section class="clients reveal">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Trusted Across Kenya</h2>
+            <p>Serving organizations in multiple sectors.</p>
+        </div>
+
+        <div class="clients-grid">
+            <div class="client-card">Commercial Buildings</div>
+            <div class="client-card">Hospitals</div>
+            <div class="client-card">Schools</div>
+            <div class="client-card">Hotels</div>
+            <div class="client-card">Churches</div>
+            <div class="client-card">Government Buildings</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="reveal">
+
+    <p class="section-eyebrow">
+
+        Why Choose KleenChamps
+
+    </p>
+
+    <h2 class="section-title">
+
+        Trusted Across Kenya
+
+    </h2>
+
+    <div class="why-grid">
+
+        <div class="why-item">
+
+            <div class="why-number">01</div>
+
+            <h3>Experienced Professionals</h3>
+
+        </div>
+
+        <div class="why-item">
+
+            <div class="why-number">02</div>
+
+            <h3>Modern Restoration Techniques</h3>
+
+        </div>
+
+        <div class="why-item">
+
+            <div class="why-number">03</div>
+
+            <h3>Eco-Friendly Products</h3>
+
+        </div>
+
+        <div class="why-item">
+
+            <div class="why-number">04</div>
+
+            <h3>Guaranteed Quality</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+
+<section class="cta reveal">
+    <div class="container cta-content">
+
+        <h2>Ready to Restore Your Property?</h2>
+
+        <p>
+            Talk to our specialists today and receive a free consultation and quotation for your project.
+        </p>
+
+        <div class="hero-actions">
+            <a href="{% url 'contact' %}" class="btn-primary">
+                Request a Free Quote
+            </a>
+
+            <a href="tel:+254 793 303 913" class="btn-secondary">
+                Call Us
+            </a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

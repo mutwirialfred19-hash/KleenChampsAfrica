@@ -1,0 +1,135 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Contact Us | KleenChamps Africa{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+    <div class="container page-hero-content">
+        <p class="section-eyebrow">CONTACT US</p>
+        <h1>Let's Discuss Your Project</h1>
+        <p>Whether you need restoration, waterproofing, floor care or maintenance, our team is ready to help.</p>
+    </div>
+</section>
+
+<section class="container reveal">
+
+    <div class="service-detail">
+
+        <div>
+
+            <p class="section-eyebrow">SEND AN ENQUIRY</p>
+            <h2 class="section-title">Request a Free Quote</h2>
+
+            <form method="post" action="{% url 'contact' %}">
+                {% csrf_token %}
+
+                <input type="text" name="name" placeholder="Full Name" required>
+
+                <input type="email" name="email" placeholder="Email Address" required>
+
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+
+                <input type="text" name="company" placeholder="Company (Optional)">
+
+                <select name="service" required>
+                    <option value="">Select Service</option>
+                    <option>Building Restoration</option>
+                    <option>Concrete Restoration</option>
+                    <option>Floor Care & Surface Polishing</option>
+                    <option>Roof Cleaning & Maintenance</option>
+                    <option>Waterproofing & Protective Coatings</option>
+                </select>
+
+                <textarea name="message" rows="6" placeholder="Tell us about your project..." required></textarea>
+
+                <button type="submit" class="btn-primary">
+                    Send Request
+                </button>
+
+            </form>
+
+        </div>
+
+        <div>
+
+            <p class="section-eyebrow">CONTACT INFORMATION</p>
+            <h2 class="section-title">Get In Touch</h2>
+
+            <div class="why-grid">
+
+                <div class="why-card">
+                    <h3>Office</h3>
+                    <p>Eureka Towers 4th Floor, Kikuyu Town</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>Email</h3>
+                    <p>info@kleenchamps.com</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>Phone</h3>
+                    <p>+254 793 303 913</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>Business Hours</h3>
+                    <p>Mon – Fri: 8:00 AM – 5:00 PM</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reveal">
+    <div class="container">
+
+        <p class="section-eyebrow">WHY CONTACT US</p>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <h3>✔ Free Consultation</h3>
+                <p>Professional assessment before work begins.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>✔ Fast Response</h3>
+                <p>We respond to enquiries as quickly as possible.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>✔ Professional Advice</h3>
+                <p>Recommendations tailored to your property.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="cta-section reveal">
+
+    <div class="container cta-content">
+
+        <h2>Ready to Restore Your Property?</h2>
+
+        <p>
+            Contact KleenChamps Africa today for reliable building restoration and maintenance services.
+        </p>
+
+        <a href="tel:+254 793 303 913" class="btn-primary">
+            Call Us Today
+        </a>
+
+    </div>
+
+</section>
+
+{% endblock %}

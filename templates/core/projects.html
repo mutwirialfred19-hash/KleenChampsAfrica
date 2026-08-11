@@ -1,0 +1,93 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block title %}Projects | KleenChamps Africa{% endblock %}
+
+{% block content %}
+
+<section class="page-hero">
+  <div class="container page-hero-content">
+    <p class="section-eyebrow">OUR PROJECTS</p>
+    <h1>Delivering Lasting Results</h1>
+    <p>Explore a selection of restoration, waterproofing, floor care and façade improvement projects completed by KleenChamps Africa.</p>
+    <a href="{% url 'contact' %}" class="btn-primary">Start Your Project</a>
+  </div>
+</section>
+
+<section class="container reveal">
+  <div class="section-heading">
+    <p class="section-eyebrow">PORTFOLIO</p>
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-sub">Each project demonstrates our commitment to quality, safety and durable restoration solutions.</p>
+  </div>
+
+  <div class="services-grid">
+
+    <article class="service-card">
+      <img src="{% static 'images/project1.jpg' %}" alt="Commercial façade restoration">
+      <h3>Commercial Façade Restoration</h3>
+      <p>Exterior cleaning, crack repair and protective coating for a multi-storey office building.</p>
+      <p><strong>Location:</strong> Nairobi</p>
+    </article>
+
+    <article class="service-card">
+      <img src="{% static 'images/project2.jpg' %}" alt="Marble restoration">
+      <h3>Marble Floor Restoration</h3>
+      <p>Grinding, polishing and sealing of worn marble flooring to restore its original finish.</p>
+      <p><strong>Location:</strong> Westlands</p>
+    </article>
+
+    <article class="service-card">
+      <img src="{% static 'images/project3.jpg' %}" alt="Roof cleaning">
+      <h3>Roof Cleaning</h3>
+      <p>Complete roof cleaning and preventive maintenance for a residential estate.</p>
+      <p><strong>Location:</strong> Karen</p>
+    </article>
+
+    <article class="service-card">
+      <img src="{% static 'images/project4.jpg' %}" alt="Waterproofing">
+      <h3>Waterproofing System</h3>
+      <p>Roof and basement waterproofing with long-life protective membranes.</p>
+      <p><strong>Location:</strong> Kiambu</p>
+    </article>
+
+    <article class="service-card">
+      <img src="{% static 'images/project5.jpg' %}" alt="Concrete repair">
+      <h3>Concrete Restoration</h3>
+      <p>Structural repair and concrete protection for an industrial facility.</p>
+      <p><strong>Location:</strong> Athi River</p>
+    </article>
+
+    <article class="service-card">
+      <img src="{% static 'images/project6.jpg' %}" alt="Stone polishing">
+      <h3>Stone Surface Polishing</h3>
+      <p>Premium polishing and sealing of natural stone surfaces in a commercial property.</p>
+      <p><strong>Location:</strong> Mombasa</p>
+    </article>
+
+  </div>
+</section>
+
+<section class="reveal">
+  <div class="container">
+    <p class="section-eyebrow">HOW WE DELIVER</p>
+    <h2 class="section-title">Our Project Process</h2>
+
+    <div class="why-grid">
+      <div class="why-card"><h3>1. Consultation</h3><p>Understand your goals and inspect the site.</p></div>
+      <div class="why-card"><h3>2. Planning</h3><p>Create a detailed restoration plan and quotation.</p></div>
+      <div class="why-card"><h3>3. Execution</h3><p>Deliver the project safely using modern techniques.</p></div>
+      <div class="why-card"><h3>4. Handover</h3><p>Final inspection to ensure quality and client satisfaction.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section reveal">
+  <div class="container cta-content">
+    <h2>Let's Restore Your Property</h2>
+    <p>Contact KleenChamps Africa for a professional assessment and a free quotation.</p>
+    <a href="{% url 'contact' %}" class="btn-primary">Request a Quote</a>
+  </div>
+</section>
+
+{% endblock %}

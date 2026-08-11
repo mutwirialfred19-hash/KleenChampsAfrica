@@ -1,0 +1,60 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Industries | KleenChamps Africa{% endblock %}
+{% block content %}
+<section class="page-hero">
+<div class="container page-hero-content">
+<p class="section-eyebrow">INDUSTRIES WE SERVE</p>
+<h1>Restoration Solutions Across Multiple Sectors</h1>
+<p>We provide specialist restoration and maintenance services for commercial, residential, industrial and institutional properties across Kenya.</p>
+<a href="{% url 'contact' %}" class="btn-primary">Discuss Your Project</a>
+</div>
+</section>
+
+<section class="container ">
+<p class="section-eyebrow">OUR EXPERTISE</p>
+<h2 class="section-title">Industries We Serve</h2>
+<p class="section-sub">Every sector has unique restoration needs. Our solutions are tailored for performance, durability and long-term value.</p>
+
+<div class="services-grid">
+<div class="service-card"><img src="{% static 'images/industry-commercial.jpg' %}" alt=""><h3>Commercial Buildings</h3><p>Office buildings, malls and mixed-use developments.</p></div>
+<div class="service-card"><img src="{% static 'images/industry-residential.jpg' %}" alt=""><h3>Residential Properties</h3><p>Homes, apartments and gated communities.</p></div>
+<div class="service-card"><img src="{% static 'images/industry-industrial.jpg' %}" alt=""><h3>Industrial Facilities</h3><p>Factories, warehouses and production plants.</p></div>
+<div class="service-card"><img src="{% static 'images/industry-healthcare.jpg' %}" alt=""><h3>Healthcare</h3><p>Hospitals and medical facilities.</p></div>
+<div class="service-card"><img src="{% static 'images/industry-hospitality.jpg' %}" alt=""><h3>Hospitality</h3><p>Hotels, resorts and restaurants.</p></div>
+<div class="service-card"><img src="{% static 'images/industry-education.jpg' %}" alt=""><h3>Education</h3><p>Schools, colleges and universities.</p></div>
+    <div class="service-card">
+    <img src="{% static 'images/industry-church.jpg' %}" alt="Churches">
+    <h3>Churches & Places of Worship</h3>
+    <p>Restoration, waterproofing, roof maintenance and exterior cleaning for churches, cathedrals and other places of worship.</p>
+</div>
+
+<div class="service-card">
+    <img src="{% static 'images/industry-government.jpg' %}" alt="Government Buildings">
+    <h3>Government Buildings</h3>
+    <p>Professional restoration and maintenance services for government offices, public institutions and civic facilities.</p>
+</div>
+</div>
+</section>
+
+<section class="reveal">
+<div class="container">
+<p class="section-eyebrow">WHY KLEENCHAMPS</p>
+<h2 class="section-title">Trusted Across Industries</h2>
+<div class="why-grid">
+<div class="why-card"><h3>Tailored Solutions</h3><p>Customized restoration strategies for every client.</p></div>
+<div class="why-card"><h3>Experienced Team</h3><p>Qualified professionals using modern equipment.</p></div>
+<div class="why-card"><h3>Quality Assurance</h3><p>Consistent workmanship and lasting results.</p></div>
+<div class="why-card"><h3>Safety First</h3><p>Strict compliance with health and safety standards.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta-section reveal">
+<div class="container cta-content">
+<h2>Let's Restore Your Property</h2>
+<p>Partner with KleenChamps Africa for dependable restoration and maintenance services.</p>
+<a href="{% url 'contact' %}" class="btn-primary">Request a Consultation</a>
+</div>
+</section>
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title %}Services | KleenChamps Africa{% endblock %}
+{% block content %}
+
+<section class="page-hero services-hero">
+  <div class="container page-hero-content">
+    <p class="section-eyebrow">OUR SERVICES</p>
+    <h1>Professional Building Restoration Solutions</h1>
+    <p>We restore, protect and maintain commercial, industrial and residential properties across Kenya.</p>
+    <a href="{% url 'contact' %}" class="btn-primary">Request a Free Quote</a>
+  </div>
+</section>
+
+<section class="container services-intro reveal">
+    <div class="section-heading">
+        <p class="section-eyebrow">WHAT WE DO</p>
+        <h2 class="section-title">Complete Restoration Services</h2>
+        <p class="section-sub">
+            Every service is delivered by trained professionals using premium
+            products and modern equipment.
+        </p>
+    </div>
+</section>
+
+
+<section class="container reveal">
+
+  <div class="service-detail">
+    <div class="service-image">
+      <img src="{% static 'images/service-building.jpg' %}" alt="">
+    </div>
+    <div class="service-content">
+      <p class="section-eyebrow">01</p>
+      <h2>Building Exterior Restoration</h2>
+      <p>Restore façades, walls and external finishes while improving appearance and durability.</p>
+      <ul>
+        <li>Facade Cleaning</li>
+        <li>Crack Repairs</li>
+        <li>Protective Coatings</li>
+        <li>Surface Repainting</li>
+      </ul>
+      <a href="{% url 'contact' %}" class="btn-primary">Request This Service</a>
+    </div>
+  </div>
+
+  <div class="service-detail reverse">
+    <div class="service-image">
+      <img src="{% static 'images/service-concrete.jpg' %}" alt="">
+    </div>
+    <div class="service-content">
+      <p class="section-eyebrow">02</p>
+      <h2>Concrete Restoration</h2>
+      <p>Repair deteriorated concrete and improve long-term structural performance.</p>
+      <ul><li>Structural Repair</li><li>Concrete Protection</li><li>Joint Repairs</li><li>Surface Restoration</li></ul>
+      <a href="{% url 'contact' %}" class="btn-primary">Request This Service</a>
+    </div>
+  </div>
+
+  <div class="service-detail">
+    <div class="service-image">
+      <img src="{% static 'images/service-floor.jpg' %}" alt="">
+    </div>
+    <div class="service-content">
+      <p class="section-eyebrow">03</p>
+      <h2>Floor Care & Surface Polishing</h2>
+      <p>Professional polishing and sealing for marble, terrazzo, granite and stone surfaces.</p>
+      <ul><li>Grinding</li><li>Polishing</li><li>Sealing</li><li>Maintenance</li></ul>
+      <a href="{% url 'contact' %}" class="btn-primary">Request This Service</a>
+    </div>
+  </div>
+
+  <div class="service-detail reverse">
+    <div class="service-image">
+      <img src="{% static 'images/service-roof.jpg' %}" alt="">
+    </div>
+    <div class="service-content">
+      <p class="section-eyebrow">04</p>
+      <h2>Roof Cleaning & Maintenance</h2>
+      <p>Protect your roof from premature deterioration with professional cleaning.</p>
+      <ul><li>Roof Washing</li><li>Moss Removal</li><li>Preventive Maintenance</li><li>Protective Treatments</li></ul>
+      <a href="{% url 'contact' %}" class="btn-primary">Request This Service</a>
+    </div>
+  </div>
+
+  <div class="service-detail">
+    <div class="service-image">
+      <img src="{% static 'images/service-waterproof.jpg' %}" alt="">
+    </div>
+    <div class="service-content">
+      <p class="section-eyebrow">05</p>
+      <h2>Waterproofing & Protective Coatings</h2>
+      <p>Advanced waterproofing systems for roofs, basements and walls.</p>
+      <ul><li>Roof Waterproofing</li><li>Basement Protection</li><li>Wall Waterproofing</li><li>Protective Membranes</li></ul>
+      <a href="{% url 'contact' %}" class="btn-primary">Request This Service</a>
+    </div>
+  </div>
+
+</section>
+
+<section class="cta-section reveal">
+<div class="container cta-content">
+<h2>Need Expert Restoration Services?</h2>
+<p>Talk to our specialists today and receive a free consultation and quotation.</p>
+<a href="{% url 'contact' %}" class="btn-primary">Get a Free Quote</a>
+</div>
+</section>
+
+{% endblock %}
