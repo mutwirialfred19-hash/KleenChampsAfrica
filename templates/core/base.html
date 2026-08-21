@@ -44,14 +44,12 @@
 
     <!-- Main CSS -->
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=2">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?v=3">
 
     {% block extra_css %}
     {% endblock %}
 
 </head>
-
-<script src="{% static 'js/main.js' %}"></script>
 
 <body>
 <div class="progress-bar"></div>
@@ -131,118 +129,159 @@ Request Quote
 {% endblock %}
 
 </main>
-
 <footer class="footer">
 
-<div class="container footer-grid">
+    <div class="container footer-grid">
 
-<div>
+        <!-- BRAND + SOCIAL -->
+        <div class="footer-brand">
 
-<img src="{% static 'images/logo.png' %}"
-     class="footer-logo">
+            <div class="footer-social">
 
-<h3>Kleen<span>Champs</span> Africa</h3>
+    <a href="YOUR_X_URL"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="X">
+        <i class="fa-brands fa-x-twitter"></i>
+    </a>
 
-<p>
+    <a href="YOUR_LINKEDIN_URL"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="LinkedIn">
+        <i class="fa-brands fa-linkedin-in"></i>
+    </a>
 
-Professional building restoration,
-surface treatment,
-waterproofing,
-and maintenance specialists.
+    <a href="https://www.instagram.com/kleenchamps?utm_source=qr&igsh=bXFhcmdhZzBhaXMy"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
 
-</p>
+    <a href="https://www.tiktok.com/@kleenchamps?_r=1&_t=ZS-990jB4rYQlt"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Tiktok">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
 
-</div>
+    <a href="YOUR_YOUTUBE_URL"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="YouTube">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
 
-<div>
-
-<h4>Quick Links</h4>
-
-<ul>
-
-<li><a href="{% url 'home' %}">Home</a></li>
-
-<li><a href="{% url 'about' %}">About</a></li>
-
-<li><a href="{% url 'services' %}">Services</a></li>
-
-<li><a href="{% url 'projects' %}">Projects</a></li>
-
-<li><a href="{% url 'contact' %}">Contact</a></li>
-
-</ul>
-
-</div>
-
-<div>
-
-<h4>Services</h4>
-
-<ul>
-
-<li>Building Restoration</li>
-
-<li>Concrete Repair</li>
-
-<li>Floor Care</li>
-
-<li>Roof Cleaning</li>
-
-<li>Waterproofing</li>
-
-</ul>
+    <a href="YOUR_FACEBOOK_URL"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
 
 </div>
 
-<div>
+            <div class="footer-brand-content">
 
-<h4>Contact</h4>
+                <img
+                    src="{% static 'images/logo.png' %}"
+                    class="footer-logo"
+                    alt="KleenChamps Africa"
+                >
 
-<p>
+                <h3>KleenChamps Africa</h3>
 
-<i class="fa-solid fa-location-dot"></i>
+                <p>
+                    Professional building restoration, surface treatment,
+                    waterproofing, and maintenance specialists.
+                </p>
 
-Eureka Towers 4th Floor, Kikuyu Town
-</p>
+            </div>
 
-<p>
+        </div>
 
-<i class="fa-solid fa-phone"></i>
 
-+254 793 303 913
+        <!-- QUICK LINKS -->
+        <div>
 
-</p>
+            <h4>Quick Links</h4>
 
-<p>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
+                <li><a href="{% url 'projects' %}">Projects</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
 
-<i class="fa-solid fa-envelope"></i>
+        </div>
 
-info@kleenchamps.com
 
-</p>
+        <!-- SERVICES -->
+        <div>
 
-</div>
+            <h4>Services</h4>
 
-</div>
+            <ul>
+                <li>Building Restoration</li>
+                <li>Concrete Repair</li>
+                <li>Floor Care</li>
+                <li>Roof Cleaning</li>
+                <li>Waterproofing</li>
+                <li>Painting</li>
+            </ul>
 
-<div class="copyright">
+        </div>
 
-© {% now "Y" %}
 
-KleenChamps Africa.
+        <!-- CONTACT -->
+        <div>
 
-All Rights Reserved.
+            <h4>Contact</h4>
 
-</div>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Eureka Towers 4th Floor,<br>
+                Kikuyu Town
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +254 793 303 913
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                mutwirialfred19@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- COPYRIGHT -->
+    <div class="copyright">
+
+        <div class="container">
+
+            © {% now "Y" %} KleenChamps Africa.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
 
 </footer>
-
 {% block scripts %}
 {% endblock %}
 
 <button id="backToTop">
     <i class="fas fa-arrow-up"></i>
 </button>
+
+<script src="{% static 'js/main.js' %}"></script>
 
 </body>
 

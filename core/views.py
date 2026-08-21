@@ -56,7 +56,7 @@ Project Details:
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
-            ["info@kleenchamps.com"],   # Change to your email
+            ["mutwirialfred19@gmail.com"],   # Change to your email
             fail_silently=False,
         )
 

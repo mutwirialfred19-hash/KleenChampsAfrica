@@ -80,6 +80,30 @@ section{padding:90px 0}
  color:#fff;
 }
 
+/* ---------- SECONDARY BUTTON ---------- */
+
+.btn-secondary{
+    display:inline-block;
+    padding:14px 28px;
+
+    border:2px solid rgba(255,255,255,.8);
+    color:#fff;
+
+    border-radius:40px;
+
+    font-weight:600;
+    text-decoration:none;
+
+    transition:all .3s ease;
+}
+
+.btn-secondary:hover{
+    background:#fff;
+    color:var(--primary);
+    transform:translateY(-2px);
+}
+
+
 /* ---------- HEADER ---------- */
 .header{
     position:fixed;
@@ -122,6 +146,14 @@ header.scrolled{
  margin-bottom:24px;
 }
 
+/* ---------- SERVICES / INDUSTRIES GRID ---------- */
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:30px;
+    margin-top:40px;
+}
 /* ---------- CARDS ---------- */
 .service-card{
     background:#fff;
@@ -156,23 +188,31 @@ header.scrolled{
     transform:scaleX(1);
 }
 /* ---------- SERVICE DETAIL ---------- */
+
 .service-detail{
     display:grid;
     grid-template-columns:55% 45%;
     gap:80px;
     align-items:center;
 }
+
 .service-detail.reverse .service-image{
- order:2;
+    order:2;
 }
+
 .service-image{
     position:relative;
+    width:100%;
+    height:420px;
+    overflow:hidden;
+    border-radius:20px;
 }
 
 .service-image img{
     width:100%;
     height:100%;
     object-fit:cover;
+    display:block;
     border-radius:20px;
     box-shadow:0 30px 70px rgba(0,0,0,.18);
     transition:transform .45s ease;
@@ -182,16 +222,17 @@ header.scrolled{
     transform:scale(1.03);
 }
 .service-content ul{
- margin-top:20px;
- padding-left:20px;
- list-style:disc;
+    margin-top:20px;
+    padding-left:20px;
+    list-style:disc;
 }
 
 /* ---------- CTA ---------- */
+.cta,
 .cta-section{
- background:var(--primary);
- color:#fff;
- text-align:center;
+    background:var(--primary);
+    color:#fff;
+    text-align:center;
 }
 .cta-content{
  max-width:700px;
@@ -213,34 +254,6 @@ form input,form textarea,form select{
 form input:focus,form textarea:focus,form select:focus{
  outline:none;
  border-color:var(--primary);
-}
-
-/* ---------- FOOTER ---------- */
-.footer{
- background:#111;
- color:#ddd;
-}
-.footer-grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
- gap:40px;
- padding:70px 20px;
-}
-.footer-logo{
- width:80px;
- margin-bottom:15px;
-}
-.footer h4{
- color:#fff;
- margin-bottom:15px;
-}
-.footer li{margin-bottom:10px}
-.footer a:hover{color:var(--accent)}
-.copyright{
- text-align:center;
- padding:20px;
- border-top:1px solid rgba(255,255,255,.1);
- color:#999;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -325,8 +338,9 @@ form input:focus,form textarea:focus,form select:focus{
 
 .ba-card img{
     width:100%;
-    height:260px;
+    height:100%;
     object-fit:cover;
+    display:block;
     transition:transform .5s ease;
 }
 
@@ -338,12 +352,19 @@ form input:focus,form textarea:focus,form select:focus{
     padding:25px;
 }
 
-
 /* ---------- WHY US ---------- */
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    gap:30px;
+    margin-top:40px;
+    width:100%;
+}
 
 .why-item{
     background:#fff;
-    padding:35px;
+    padding:45px 35px;
     text-align:center;
     border-radius:14px;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
@@ -818,4 +839,195 @@ form input:focus,form textarea:focus,form select:focus{
     margin:0 auto;
     font-size:1.08rem;
     line-height:1.8;
+}
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+    background:#111;
+    color:#ddd;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr 1.2fr;
+    gap:60px;
+    padding:70px 20px;
+    align-items:start;
+}
+
+/* ---------- BRAND + SOCIAL ---------- */
+
+.footer-brand{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+}
+
+.footer-social{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    flex-shrink:0;
+}
+
+.footer-social a{
+    width:34px;
+    height:34px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:9px;
+
+    color:#fff;
+    text-decoration:none;
+    font-size:.9rem;
+
+    transition:all .3s ease;
+}
+
+.footer-social a:hover{
+    background:#0B5D3B;
+    border-color:#0B5D3B;
+    transform:translateY(-3px);
+}
+
+.footer-brand-content{
+    max-width:280px;
+}
+
+/* ---------- FOOTER LOGO ---------- */
+
+.footer-logo{
+    width:80px;
+    margin-bottom:15px;
+}
+
+.footer-brand-content h3{
+    color:#fff;
+    margin-bottom:8px;
+}
+
+.footer-brand-content p{
+    color:#ddd;
+    line-height:1.7;
+}
+
+/* ---------- FOOTER HEADINGS ---------- */
+
+.footer h4{
+    color:#fff;
+    margin-bottom:15px;
+}
+
+/* ---------- FOOTER LISTS ---------- */
+
+.footer ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer li{
+    margin-bottom:10px;
+}
+
+.footer a{
+    color:#ddd;
+    text-decoration:none;
+    transition:color .3s ease;
+}
+
+.footer a:hover{
+    color:#D4A017;
+}
+
+/* ---------- CONTACT ---------- */
+
+.footer li i{
+    margin-right:8px;
+}
+
+/* ---------- COPYRIGHT ---------- */
+
+.copyright{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+    color:#999;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:992px){
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+        gap:40px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .footer-brand{
+        gap:15px;
+    }
+
+}
+@media(max-width:768px){
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+@media(max-width:1000px){
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:992px){
+
+    .service-image{
+        height:360px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .service-image{
+        height:300px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .ba-card img{
+        height:280px;
+    }
+
 }

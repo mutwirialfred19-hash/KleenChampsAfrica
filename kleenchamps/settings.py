@@ -53,8 +53,12 @@ WSGI_APPLICATION = 'kleenchamps.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME'),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD'),
+        'HOST': config('DB_HOST', default='localhost'),
+        'PORT': config('DB_PORT', default='5432'),
     }
 }
 
@@ -66,10 +70,6 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = "static/"
-
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
@@ -102,5 +102,5 @@ DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 MESSAGE_TAGS = {
     messages.SUCCESS: "success",
-    messages.ERROR: "danger",
+    messages.ERROR: "unsuccessful",
 }
